@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #4a90e2;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --bg-color: #f5f7fa;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #dbeafe, #f1f5f9);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.task-controls {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-style: italic;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.task:hover {
+    background-color: #fcfcfc;
+}
+
+.task span {
+    flex: 1;
+    cursor: pointer;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.6;
+}
+
+.danger-btn {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    margin-left: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamProject | Task Dashboard</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Task Master</h1>
+            <p id="date-display"></p>
+        </header>
+
+        <main>
+            <section class="task-input">
+                <input type="text" id="task-input" placeholder="What needs to be done?" aria-label="New Task">
+                <button id="add-btn">Add Task</button>
+            </section>
+
+            <section class="task-controls">
+                <span id="task-count">0 items left</span>
+                <button id="clear-btn" class="danger-btn">Clear All</button>
+            </section>
+
+            <section class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </section>
+
+            <ul id="task-list">
+                <!-- Tasks or Empty Message injected here -->
+            </ul>
+        </main>
+    </div>
+
+    <script src="../Javascript/Recipe.js"></script>
+</body>
+</html>
